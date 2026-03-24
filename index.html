@@ -1,1 +1,1130 @@
-Hello World!
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Crestmont in the Heart of Boerne | New Downtown Campus</title>
+		<meta
+			name="description"
+			content="Discover Crestmont Christian Preparatory School's new downtown Boerne campus, University-Model education, admissions steps, TEFA resources, and Founding Families for 2026-27."
+		/>
+
+		<style>
+			:root {
+				--navy: #0d2230;
+				--navy-soft: #17394c;
+				--sand: #f4efe6;
+				--cream: #fbf8f2;
+				--ink: #17252d;
+				--muted: #52626d;
+				--line: rgba(23, 57, 76, 0.14);
+				--card: rgba(255, 255, 255, 0.94);
+				--gold: #c18f41;
+				--shadow: 0 16px 40px rgba(13, 34, 48, 0.12);
+				--radius: 22px;
+				--radius-sm: 16px;
+				--serif: "Iowan Old Style", "Palatino Linotype", "Book Antiqua",
+					Georgia, serif;
+				--sans: "Aptos", "Segoe UI", Tahoma, sans-serif;
+			}
+
+			* {
+				box-sizing: border-box;
+			}
+
+			html {
+				scroll-behavior: smooth;
+			}
+
+			body {
+				margin: 0;
+				font-family: var(--sans);
+				color: var(--ink);
+				background:
+					radial-gradient(circle at top left, rgba(193, 143, 65, 0.1), transparent 28%),
+					linear-gradient(180deg, #f7f2ea 0%, #f6f8fa 28%, #f3f6f8 100%);
+				line-height: 1.55;
+			}
+
+			a {
+				color: inherit;
+				text-decoration: none;
+			}
+
+			img {
+				display: block;
+				max-width: 100%;
+			}
+
+			.container {
+				width: min(1140px, calc(100% - 40px));
+				margin: 0 auto;
+			}
+
+			.topbar {
+				position: sticky;
+				top: 0;
+				z-index: 20;
+				background: rgba(13, 34, 48, 0.9);
+				backdrop-filter: blur(12px);
+				border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+			}
+
+			.topbar-inner {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				gap: 18px;
+				padding: 12px 0;
+			}
+
+			.brand {
+				display: flex;
+				align-items: center;
+				gap: 12px;
+				min-width: 0;
+			}
+
+			.brand img {
+				height: 40px;
+				width: auto;
+			}
+
+			.brand-copy {
+				min-width: 0;
+			}
+
+			.brand-copy strong,
+			.brand-copy span {
+				display: block;
+				color: rgba(255, 255, 255, 0.92);
+			}
+
+			.brand-copy strong {
+				font-size: 12px;
+				text-transform: uppercase;
+				letter-spacing: 0.12em;
+			}
+
+			.brand-copy span {
+				font-size: 14px;
+			}
+
+			.nav-actions {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: flex-end;
+				gap: 10px;
+			}
+
+			.btn {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				gap: 10px;
+				padding: 11px 16px;
+				border-radius: 999px;
+				border: 1px solid rgba(255, 255, 255, 0.16);
+				background: transparent;
+				color: rgba(255, 255, 255, 0.95);
+				font-size: 14px;
+				font-weight: 800;
+				transition:
+					transform 0.12s ease,
+					background 0.12s ease,
+					border-color 0.12s ease;
+				white-space: nowrap;
+			}
+
+			.btn:hover {
+				transform: translateY(-1px);
+			}
+
+			.btn.primary {
+				background: var(--cream);
+				color: var(--navy);
+				border-color: var(--cream);
+			}
+
+			.btn.primary:hover {
+				background: #fff;
+				border-color: #fff;
+			}
+
+			.btn.dark {
+				background: var(--navy);
+				color: rgba(255, 255, 255, 0.96);
+				border-color: var(--navy);
+			}
+
+			.btn.dark:hover {
+				background: #102a3a;
+				border-color: #102a3a;
+			}
+
+			.btn.light {
+				background: rgba(255, 255, 255, 0.92);
+				color: var(--navy);
+				border-color: rgba(23, 57, 76, 0.18);
+			}
+
+			.btn.light:hover {
+				background: #fff;
+				border-color: rgba(23, 57, 76, 0.3);
+			}
+
+			.hero {
+				position: relative;
+				overflow: hidden;
+				background: var(--navy);
+			}
+
+			.hero::before {
+				content: "";
+				position: absolute;
+				inset: 0;
+				background-image:
+					linear-gradient(
+						115deg,
+						rgba(13, 34, 48, 0.94) 0%,
+						rgba(13, 34, 48, 0.72) 48%,
+						rgba(13, 34, 48, 0.9) 100%
+					),
+					url("https://static.wixstatic.com/media/12b7ce_b738ab4138794337a9246815fab945cc~mv2.png/v1/fill/w_1400,h_800,al_c,q_90,enc_avif,quality_auto/12b7ce_b738ab4138794337a9246815fab945cc~mv2.png");
+				background-size: cover;
+				background-position: center;
+				transform: scale(1.02);
+			}
+
+			.hero::after {
+				content: "";
+				position: absolute;
+				right: -10%;
+				top: 8%;
+				width: 420px;
+				height: 420px;
+				border-radius: 50%;
+				background: radial-gradient(circle, rgba(193, 143, 65, 0.18), transparent 68%);
+			}
+
+			.hero-inner {
+				position: relative;
+				padding: 64px 0 44px;
+				color: rgba(255, 255, 255, 0.95);
+			}
+
+			.kicker,
+			.pill {
+				display: inline-flex;
+				align-items: center;
+				gap: 8px;
+				padding: 8px 12px;
+				border-radius: 999px;
+				font-size: 12px;
+				font-weight: 900;
+				letter-spacing: 0.12em;
+				text-transform: uppercase;
+			}
+
+			.kicker {
+				border: 1px solid rgba(255, 255, 255, 0.18);
+				background: rgba(0, 0, 0, 0.18);
+				color: rgba(255, 255, 255, 0.9);
+			}
+
+			.pill {
+				background: rgba(23, 57, 76, 0.06);
+				border: 1px solid rgba(23, 57, 76, 0.12);
+				color: var(--navy-soft);
+			}
+
+			h1,
+			h2,
+			h3 {
+				font-family: var(--serif);
+				letter-spacing: -0.02em;
+				line-height: 1.08;
+				margin: 0;
+			}
+
+			h1 {
+				margin-top: 16px;
+				font-size: clamp(34px, 5vw, 58px);
+				max-width: 12ch;
+			}
+
+			h2 {
+				font-size: clamp(28px, 3.3vw, 40px);
+			}
+
+			h3 {
+				font-size: 24px;
+			}
+
+			.subhead {
+				margin: 16px 0 0;
+				max-width: 74ch;
+				font-size: 18px;
+				color: rgba(255, 255, 255, 0.86);
+			}
+
+			.hero-quote {
+				margin-top: 14px;
+				font-size: 18px;
+				font-weight: 900;
+				color: rgba(255, 244, 220, 0.96);
+			}
+
+			.hero-list,
+			.feature-list,
+			.simple-list {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+
+			.hero-list li,
+			.feature-list li,
+			.simple-list li {
+				padding-left: 18px;
+				position: relative;
+			}
+
+			.hero-list li::before,
+			.feature-list li::before,
+			.simple-list li::before {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0.62em;
+				width: 8px;
+				height: 8px;
+				border-radius: 50%;
+				background: var(--gold);
+			}
+
+			.hero-ctas {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 10px;
+				margin-top: 20px;
+			}
+
+			main section {
+				padding: 26px 0;
+			}
+
+			.grid {
+				display: grid;
+				grid-template-columns: repeat(12, 1fr);
+				gap: 18px;
+			}
+
+			.two-col .left {
+				grid-column: 1 / span 7;
+			}
+
+			.two-col .right {
+				grid-column: 8 / span 5;
+			}
+
+			.card {
+				background: var(--card);
+				border: 1px solid var(--line);
+				border-radius: var(--radius);
+				box-shadow: var(--shadow);
+				overflow: hidden;
+			}
+
+			.pad {
+				padding: 22px;
+			}
+
+			.lead {
+				margin: 12px 0 0;
+				color: var(--muted);
+				font-size: 17px;
+			}
+
+			.muted {
+				color: var(--muted);
+			}
+
+			.callout {
+				margin-top: 16px;
+				padding: 14px 16px;
+				border-radius: var(--radius-sm);
+				background: linear-gradient(180deg, rgba(193, 143, 65, 0.1), rgba(193, 143, 65, 0.04));
+				border: 1px solid rgba(193, 143, 65, 0.18);
+				color: var(--ink);
+			}
+
+			.callout b {
+				color: var(--navy);
+			}
+
+			.feature-list {
+				display: grid;
+				gap: 14px;
+				margin-top: 18px;
+			}
+
+			.feature-list li {
+				padding: 0 0 0 20px;
+				color: var(--muted);
+			}
+
+			.feature-list b {
+				display: block;
+				color: var(--ink);
+				margin-bottom: 4px;
+			}
+
+			.gallery {
+				display: grid;
+				grid-template-columns: repeat(12, 1fr);
+				gap: 12px;
+				margin-top: 18px;
+			}
+
+			.shot {
+				grid-column: span 6;
+				position: relative;
+				min-height: 180px;
+				border-radius: 18px;
+				overflow: hidden;
+				border: 1px solid var(--line);
+				background: #0b1c24;
+			}
+
+			.shot.large {
+				grid-column: span 12;
+				min-height: 260px;
+			}
+
+			.shot img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+
+			.cap {
+				position: absolute;
+				left: 14px;
+				right: 14px;
+				bottom: 14px;
+				color: rgba(255, 255, 255, 0.94);
+				font-weight: 900;
+				text-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+			}
+
+			.cap small {
+				display: block;
+				margin-top: 4px;
+				font-weight: 600;
+				color: rgba(255, 255, 255, 0.82);
+			}
+
+			.portrait-pair {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 12px;
+				margin-top: 18px;
+			}
+
+			.portrait {
+				position: relative;
+				min-height: 250px;
+				border-radius: 18px;
+				overflow: hidden;
+				border: 1px solid var(--line);
+				background: #0b1c24;
+			}
+
+			.portrait img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+
+			.milestones {
+				display: grid;
+				gap: 12px;
+				margin-top: 18px;
+			}
+
+			.ms {
+				display: flex;
+				gap: 12px;
+				align-items: flex-start;
+				padding: 14px;
+				border-radius: 16px;
+				background: rgba(23, 57, 76, 0.04);
+				border: 1px solid rgba(23, 57, 76, 0.1);
+			}
+
+			.ms strong {
+				display: block;
+				color: var(--ink);
+				margin-bottom: 4px;
+			}
+
+			.meta {
+				color: var(--muted);
+				font-size: 14px;
+			}
+
+			.icon {
+				width: 18px;
+				height: 18px;
+				flex: 0 0 auto;
+				margin-top: 3px;
+			}
+
+			.strip {
+				padding: 26px;
+				border-radius: var(--radius);
+				background:
+					linear-gradient(180deg, rgba(23, 57, 76, 0.05), rgba(23, 57, 76, 0.02)),
+					var(--card);
+				border: 1px solid rgba(23, 57, 76, 0.1);
+				box-shadow: var(--shadow);
+			}
+
+			.strip-row {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 10px;
+				margin-top: 18px;
+			}
+
+			.facts {
+				display: grid;
+				grid-template-columns: repeat(12, 1fr);
+				gap: 12px;
+				margin-top: 18px;
+			}
+
+			.fact {
+				grid-column: span 4;
+				padding: 16px;
+				border-radius: 16px;
+				background: rgba(255, 255, 255, 0.9);
+				border: 1px solid rgba(23, 57, 76, 0.1);
+			}
+
+			.fact .t {
+				font-weight: 900;
+				color: var(--navy);
+				margin-bottom: 6px;
+			}
+
+			.fact .d {
+				color: var(--muted);
+				font-size: 14px;
+			}
+
+			.badge {
+				display: inline-flex;
+				align-items: center;
+				gap: 10px;
+				margin-top: 18px;
+				padding: 11px 14px;
+				border-radius: 999px;
+				background: rgba(13, 34, 48, 0.06);
+				border: 1px solid rgba(13, 34, 48, 0.12);
+				font-weight: 900;
+				color: var(--navy-soft);
+			}
+
+			.simple-list {
+				display: grid;
+				gap: 10px;
+				margin-top: 18px;
+				color: var(--muted);
+			}
+
+			.action-grid {
+				display: grid;
+				grid-template-columns: repeat(12, 1fr);
+				gap: 16px;
+				margin-top: 20px;
+			}
+
+			.action {
+				grid-column: span 3;
+				padding: 18px;
+				border-radius: 18px;
+				background: rgba(255, 255, 255, 0.94);
+				border: 1px solid rgba(23, 57, 76, 0.12);
+				box-shadow: var(--shadow);
+			}
+
+			.action h3 {
+				font-size: 22px;
+				margin-bottom: 10px;
+			}
+
+			.action p {
+				color: var(--muted);
+				margin: 0 0 16px;
+			}
+
+			.action .btn {
+				width: 100%;
+			}
+
+			footer {
+				margin-top: 30px;
+				padding: 28px 0 38px;
+				background: var(--navy);
+				color: rgba(255, 255, 255, 0.88);
+				border-top: 1px solid rgba(255, 255, 255, 0.08);
+			}
+
+			footer a {
+				color: rgba(255, 255, 255, 0.94);
+			}
+
+			.footer-grid {
+				display: grid;
+				grid-template-columns: 2fr 1fr 1fr;
+				gap: 18px;
+			}
+
+			.small {
+				font-size: 13px;
+				color: rgba(255, 255, 255, 0.74);
+			}
+
+			@media (max-width: 980px) {
+				.footer-grid {
+					grid-template-columns: 1fr;
+				}
+
+				.two-col .left,
+				.two-col .right {
+					grid-column: 1 / span 12;
+				}
+
+				.action {
+					grid-column: span 6;
+				}
+
+				.fact {
+					grid-column: span 12;
+				}
+			}
+
+			@media (max-width: 720px) {
+				.topbar-inner {
+					flex-direction: column;
+					align-items: stretch;
+				}
+
+				.nav-actions {
+					justify-content: flex-start;
+				}
+
+				.portrait-pair {
+					grid-template-columns: 1fr;
+				}
+
+				.shot,
+				.shot.large {
+					grid-column: span 12;
+					min-height: 180px;
+				}
+
+				.action {
+					grid-column: span 12;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="topbar">
+			<div class="container topbar-inner">
+				<div class="brand">
+					<a href="https://www.crestmontprep.org/" aria-label="Crestmont home">
+						<img
+							src="https://static.wixstatic.com/media/8eece6_2632e83d8c964e3cbcb7753cd2b3487f~mv2.png"
+							alt="Crestmont Christian Preparatory School logo"
+						/>
+					</a>
+					<div class="brand-copy">
+						<strong>2026-27 Preview</strong>
+						<span>Crestmont in the Heart of Boerne</span>
+					</div>
+				</div>
+
+				<div class="nav-actions">
+					<a class="btn" href="#overview">Overview</a>
+					<a class="btn" href="#downtown">Downtown Story</a>
+					<a class="btn" href="#tefa">TEFA</a>
+					<a class="btn" href="#founding">Founding Families</a>
+					<a class="btn primary" href="#next-steps">Next Steps</a>
+				</div>
+			</div>
+		</div>
+
+		<header class="hero">
+			<div class="container hero-inner">
+				<span class="kicker">New downtown campus for 2026-27</span>
+				<h1>Once in a Generation: Crestmont in the Heart of Boerne</h1>
+				<p class="subhead">
+					For 17 years, Crestmont Christian Preparatory School has served Boerne
+					families with K-12 University-Model education rooted in Christian
+					discipleship. For the 2026-27 school year, we are moving to 402 E.
+					Blanco and bringing our next chapter into the heart of downtown Boerne.
+				</p>
+				<div class="hero-quote">"A historic schoolhouse becomes a school again."</div>
+
+				<div class="hero-ctas">
+					<a class="btn primary" href="https://www.crestmontprep.org/connect"
+						>Ask a question</a
+					>
+					<a
+						class="btn"
+						href="https://www.crestmontprep.org/admissions-1"
+						>Begin admissions</a
+					>
+					<a class="btn" href="#next-steps">See next steps</a>
+				</div>
+			</div>
+		</header>
+
+		<main class="container">
+			<section id="overview" class="grid two-col" aria-label="School overview">
+				<div class="card pad left">
+					<span class="pill">Academic discipleship</span>
+					<h2 style="margin-top: 12px">A school built around partnership, purpose, and preparation</h2>
+					<p class="lead">
+						Crestmont is a non-denominational K-12 Christian school dedicated to
+						high-quality education, servant leadership, and academic preparation.
+						Our University-Model structure is designed to support family
+						partnership while helping students grow in independence, discipline,
+						and love of learning.
+					</p>
+
+					<ul class="feature-list">
+						<li>
+							<b>University-Model education.</b>
+							Our schedule helps cultivate time management and independent study
+							skills that prepare students for college and life.
+						</li>
+						<li>
+							<b>Christian formation across the school day.</b>
+							We design every lesson and activity to help raise servant leaders
+							and warriors for Christ.
+						</li>
+						<li>
+							<b>Family partnership from the start.</b>
+							Our admissions process is built around shared fit, with research,
+							Family Information Meetings, interviews, and student assessment.
+						</li>
+					</ul>
+				</div>
+
+				<div class="card pad right">
+					<span class="pill">Why families choose Crestmont</span>
+					<h3 style="margin-top: 12px">What to know at a glance</h3>
+					<p class="muted" style="margin-top: 12px">
+						Here is a quick overview of who we are and what makes this season
+						distinctive.
+					</p>
+
+					<ul class="simple-list">
+						<li>We offer non-denominational K-12 Christian education with classical influences.</li>
+						<li>We are a Certified University-Model School with Cognia accreditation and ACSI membership.</li>
+						<li>We pair academic rigor with Biblical truth, discipleship, and family partnership.</li>
+						<li>We have served Boerne for 17 years and currently highlight 124 students and 35 teachers and staff on our site.</li>
+						<li>Our new downtown campus opens at 402 E. Blanco for the 2026-27 school year.</li>
+					</ul>
+
+					<div class="portrait-pair" aria-label="Student life images">
+						<div class="portrait">
+							<img
+								src="https://static.wixstatic.com/media/8eece6_9206f791a92e4fb89119e56aff9a2bda~mv2.jpg/v1/fill/w_650,h_900,al_c,q_80,enc_avif,quality_auto/487478303_3905447223043337_3150959640453398028_n.jpg"
+								alt="Crestmont community photo"
+							/>
+						</div>
+						<div class="portrait">
+							<img
+								src="https://static.wixstatic.com/media/8eece6_cfe5ccae833b4942849727f7ba0eb8da~mv2.jpg/v1/fill/w_650,h_900,al_c,q_80,enc_avif,quality_auto/486349727_3899187657002627_4653331666492364625_n.jpg"
+								alt="Crestmont student portrait"
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="downtown" class="grid two-col" aria-label="Downtown campus story">
+				<div class="card pad left">
+					<span class="pill">Historic downtown campus story</span>
+					<h2 style="margin-top: 12px">A historic schoolhouse becomes a school again</h2>
+					<p class="lead">
+						For the 2026-27 school year, we are moving to 402 E. Blanco in
+						downtown Boerne. Built in 1910, this building once served as Boerne's
+						first high school and later as city hall. Now it is returning to its
+						original educational purpose.
+					</p>
+
+					<div class="gallery">
+						<div class="shot large">
+							<img
+								src="https://static.wixstatic.com/media/12b7ce_b738ab4138794337a9246815fab945cc~mv2.png/v1/fill/w_1400,h_800,al_c,q_90,enc_avif,quality_auto/12b7ce_b738ab4138794337a9246815fab945cc~mv2.png"
+								alt="Historic downtown schoolhouse exterior"
+							/>
+							<div class="cap">
+								Heart of Boerne campus
+								<small>Our new campus brings Crestmont into the heart of Boerne.</small>
+							</div>
+						</div>
+					</div>
+
+					<div class="callout">
+						<b>What this move means for families:</b> Our new campus gives us a
+						more visible home in Boerne, a building with deep local history, and
+						space we are preparing for the 2026-27 school year.
+					</div>
+				</div>
+
+				<div class="card pad right">
+					<span class="pill">Proposed building updates timeline</span>
+					<h3 style="margin-top: 12px">A simple update cadence for this page</h3>
+					<p class="muted" style="margin-top: 12px">
+						This is a proposed structure for keeping families informed as the new
+						campus moves toward opening.
+					</p>
+
+					<div style="margin-top: 18px; font-weight: 900; color: var(--navy)">
+						Recent progress / update
+					</div>
+
+					<div class="milestones" aria-label="Recent building updates">
+						<div class="ms">
+							<svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+								<path
+									d="M20 6L9 17l-5-5"
+									stroke="#17394c"
+									stroke-width="2.4"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+							<div>
+								<strong>New downtown campus announced.</strong>
+								<div class="meta">Crestmont has announced its move to 402 E. Blanco, bringing the 2026-27 school year into downtown Boerne.</div>
+							</div>
+						</div>
+						<div class="ms">
+							<svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+								<path
+									d="M12 22s7-4.5 7-11a7 7 0 10-14 0c0 6.5 7 11 7 11z"
+									stroke="#17394c"
+									stroke-width="2.2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+								<path
+									d="M12 11a2.2 2.2 0 110-4.4A2.2 2.2 0 0112 11z"
+									stroke="#17394c"
+									stroke-width="2.2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+							<div>
+								<strong>Campus preparation is underway.</strong>
+								<div class="meta">Recent coverage describes classroom outfitting and campus readiness work ahead of the August 2026 opening.</div>
+							</div>
+						</div>
+					</div>
+
+					<div style="margin-top: 18px; font-weight: 900; color: var(--navy)">
+						Timeline / upcoming milestones
+					</div>
+
+					<div class="milestones" aria-label="Proposed upcoming milestones">
+						<div class="ms">
+							<svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+								<path
+									d="M4 5h16v14H4z"
+									stroke="#17394c"
+									stroke-width="2.2"
+									stroke-linejoin="round"
+								/>
+								<path
+									d="M8 3v4M16 3v4M4 10h16"
+									stroke="#17394c"
+									stroke-width="2.2"
+									stroke-linecap="round"
+								/>
+							</svg>
+							<div>
+								<strong>Spring updates.</strong>
+								<div class="meta">Share brief progress notes on classrooms, campus setup, and readiness for the move.</div>
+							</div>
+						</div>
+						<div class="ms">
+							<svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+								<path
+									d="M4 12h16"
+									stroke="#17394c"
+									stroke-width="2.2"
+									stroke-linecap="round"
+								/>
+								<path
+									d="M12 4v16"
+									stroke="#17394c"
+									stroke-width="2.2"
+									stroke-linecap="round"
+								/>
+							</svg>
+							<div>
+								<strong>Early summer milestones.</strong>
+								<div class="meta">Add family-facing updates on logistics, preview events, and opening-season preparation.</div>
+							</div>
+						</div>
+						<div class="ms">
+							<svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+								<path
+									d="M20 6L9 17l-5-5"
+									stroke="#17394c"
+									stroke-width="2.4"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+							<div>
+								<strong>August opening.</strong>
+								<div class="meta">Post opening-week photos, a welcome note, and any final admissions availability information.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="tefa" aria-label="TEFA information">
+				<div class="strip">
+					<span class="pill">TEFA information</span>
+					<h2 style="margin-top: 12px">Already applied for TEFA? Take a closer look at Crestmont.</h2>
+					<p class="lead" style="max-width: 72ch">
+						After the March 31, 2026 deadline, we can still be part of your
+						2026-27 decision. Our TEFA page and the official Texas Education
+						Freedom Account site remain the best places for program details, and
+						we are glad to help you understand school fit, admissions, and next
+						steps.
+					</p>
+
+					<div class="facts" aria-label="TEFA guidance">
+						<div class="fact">
+							<div class="t">Use TEFA resources for program details</div>
+							<div class="d">
+								For post-deadline questions about TEFA, we direct families to our
+								TEFA page and the official state portal.
+							</div>
+						</div>
+						<div class="fact">
+							<div class="t">Keep admissions and TEFA separate</div>
+							<div class="d">
+								TEFA does not replace our admissions process. Families still need
+								to inquire, attend a Family Information Meeting, and complete
+								admissions steps.
+							</div>
+						</div>
+						<div class="fact">
+							<div class="t">Ask Crestmont about school fit</div>
+							<div class="d">
+								If you are comparing schools for 2026-27 after the TEFA deadline,
+								we can help you understand academics, schedule, campus life, and
+								next steps.
+							</div>
+						</div>
+					</div>
+
+					<div class="strip-row" aria-label="TEFA links">
+						<a class="btn dark" href="https://www.crestmontprep.org/tefa"
+							>Crestmont TEFA page</a
+						>
+						<a class="btn light" href="https://educationfreedom.texas.gov/"
+							>Official TEFA portal</a
+						>
+						<a class="btn light" href="https://www.crestmontprep.org/connect"
+							>Ask about school fit</a
+						>
+					</div>
+
+					<div class="callout">
+						<b>Need help deciding?</b> Start with an inquiry or Family Information
+						Meeting if you want to understand whether Crestmont is the right fit
+						for your family before moving deeper into admissions.
+					</div>
+				</div>
+			</section>
+
+			<section id="founding" class="grid two-col" aria-label="Founding Families">
+				<div class="card pad left">
+					<span class="pill">Founding Families</span>
+					<h2 style="margin-top: 12px">
+						Founding Families of the Heart of Boerne Campus
+					</h2>
+					<p class="lead">
+						Families who join us for the 2026-27 school year will be recognized
+						as Founding Families of the Heart of Boerne campus, honoring their
+						trust as we begin this new chapter downtown.
+					</p>
+
+					<div class="badge" aria-label="Founding family badge">
+						<svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+							<path
+								d="M12 2l3 7 7 .6-5.3 4.6 1.7 7-6.4-3.9-6.4 3.9 1.7-7L2 9.6 9 9l3-7z"
+								stroke="#17394c"
+								stroke-width="2"
+								stroke-linejoin="round"
+							/>
+						</svg>
+						Recognizing the first downtown cohort
+					</div>
+
+					<ul class="simple-list">
+						<li>Recognition in a future roster or display, if families opt in.</li>
+						<li>Invitation to a pre-opening welcome gathering or prayer evening.</li>
+						<li>A signed note from school leadership.</li>
+						<li>Inclusion in a first-year commemorative piece, if produced.</li>
+						<li>An opening-season group photo tied to the new campus chapter.</li>
+					</ul>
+				</div>
+
+				<div class="card pad right">
+					<span class="pill">What that includes</span>
+					<h3 style="margin-top: 12px">A simple way to mark a meaningful year</h3>
+					<p class="muted" style="margin-top: 12px">
+						Founding Families is meant to be simple and meaningful: a way to
+						honor this first downtown cohort without turning enrollment into a
+						membership program.
+					</p>
+
+					<ul class="feature-list">
+						<li>
+							<b>Recognition with gratitude.</b>
+							Acknowledgment may include a roster or display, a welcome event, and
+							a note from school leadership.
+						</li>
+						<li>
+							<b>Connection to the new campus.</b>
+							The focus is on joining Crestmont at a defining moment in our
+							school's story.
+						</li>
+						<li>
+							<b>No special tier or discount.</b>
+							The emphasis is recognition, not exclusivity.
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section id="next-steps" aria-label="Next steps">
+				<div class="strip">
+					<span class="pill">Next steps</span>
+					<h2 style="margin-top: 12px">Take the next step</h2>
+					<p class="lead" style="max-width: 72ch">
+						If you are exploring Crestmont for 2026-27, these are the best ways
+						to move from interest to conversation to admissions.
+					</p>
+
+					<div class="action-grid">
+						<div class="action">
+							<h3>Inquire</h3>
+							<p>
+								Start with a question about grade level, school fit, schedule,
+								TEFA context, or the downtown campus.
+							</p>
+							<a
+								class="btn dark"
+								href="https://admissions-parent.renweb.com/inquire?districtCode=SUM-TX&amp;memberId=429&amp;path=%2Foa%2Finquiry.cfm"
+								>Inquire today</a
+							>
+						</div>
+
+						<div class="action">
+							<h3>Attend a Family Information Meeting</h3>
+							<p>
+								Our upcoming Family Information Meetings are April 16, May 19,
+								and June 4, 2026.
+							</p>
+							<a
+								class="btn dark"
+								href="https://www.crestmontprep.org/admissions-1"
+								>View meeting dates</a
+							>
+						</div>
+
+						<div class="action">
+							<h3>Explore admissions</h3>
+							<p>
+								Learn how Crestmont approaches research, interviews, student
+								assessment, and enrollment for new families.
+							</p>
+							<a
+								class="btn dark"
+								href="https://www.crestmontprep.org/admissions-1"
+								>See admissions</a
+							>
+						</div>
+
+						<div class="action">
+							<h3>Apply</h3>
+							<p>
+								When you are ready, begin the application through Crestmont's
+								online admissions system.
+							</p>
+							<a
+								class="btn dark"
+								href="https://accounts.renweb.com/password/create?clientId=admissionsParentCode&amp;district=SUM-TX&amp;memberId=429"
+								>Apply now</a
+							>
+						</div>
+					</div>
+
+					<div class="callout">
+						<b>Admissions note:</b> One parent is required to attend a Family
+						Information Meeting before applying.
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="container footer-grid">
+				<div>
+					<div style="font-weight: 900; letter-spacing: 0.02em">
+						Crestmont Christian Preparatory School
+					</div>
+					<div class="small" style="margin-top: 8px">
+						K-12 University-Model education in Boerne, Texas. Our new downtown
+						campus opens for the 2026-27 school year at 402 E. Blanco.
+					</div>
+				</div>
+				<div>
+					<div style="font-weight: 900">Contact</div>
+					<div class="small" style="margin-top: 8px">
+						Tel: (210) 254-4534<br />
+						Email:
+						<a href="mailto:school@crestmontprep.org">school@crestmontprep.org</a>
+					</div>
+				</div>
+				<div>
+					<div style="font-weight: 900">Links</div>
+					<div class="small" style="margin-top: 8px">
+						<a href="https://www.crestmontprep.org/">Home</a><br />
+						<a href="https://www.crestmontprep.org/tefa">TEFA at Crestmont</a><br />
+						<a href="https://www.crestmontprep.org/connect">Connect</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
